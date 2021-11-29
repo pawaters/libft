@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
+/*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 15:44:59 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/03 16:11:05 by pwaters          ###   ########.fr       */
+/*   Created: 2021/11/08 16:28:01 by pawaters          #+#    #+#             */
+/*   Updated: 2021/11/08 16:36:09 by pawaters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	strlcat(char *dst, const char *src, size_t dstsize)
+int	ft_strnequ( char const *s1, char const *s2, size_t n)
 {
-	int	len;
 	int i;
 
-	src_len = ft_strlen(src);
 	i = 0;
-
-	while (*dst)
-	{
-		if (i++ >= dstsize)
-			break;
-		dst++;
-	}
-	if (
-
+	if (!s1 || !s2) 
+		return (0);
+	while (*(s1 + i) != '\0' && *(s1 + i) == *(s2 + i) && i < n)
+		i++;
+	if (*(s1 + i) == '\0' && *(s2 + i) == '\0')
+		return (1);
+	return (0);
+}
