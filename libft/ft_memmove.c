@@ -6,15 +6,15 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 13:33:27 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/03 13:57:44 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 16:19:35 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char 		*dst1;
+	char		*dst1;
 	const char	*src1;
-	int i;
+	int			i;
 
 	dst1 = dst;
 	src1 = src1;
@@ -24,7 +24,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (dst1 - src1 < 0)
 		while (i < n)
 			*(dst1 + i) = *(src1 + i++);
-	else 
+	else
 	{
 		i = len;
 		while (i-- > 0)

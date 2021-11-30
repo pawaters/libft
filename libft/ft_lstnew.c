@@ -1,39 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/30 16:29:44 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:30:04 by pwaters          ###   ########.fr       */
+/*   Created: 2021/11/30 13:00:13 by pwaters           #+#    #+#             */
+/*   Updated: 2021/11/30 13:23:36 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
-	int	i;
+	t_list	*new;
 
-	i = 0;
-	if (n == -2147483648)
+	new = (t_list *)malloc (sizeof(t_list));
+	if (new == NULL)
+		return (NULL);
+	if (content == NULL)
 	{
-		write(1, "-2", 2);
-		ft_putnbr_fd(147483648);
-	}
-	if (n < 0)
-	{
-		write(1, "-", 1);
-		ft_putnbr_fd(-n);
+		new->content = NULL;
+		new->content_size = 0;
 	}
 	else
 	{
-		if (n > 9)
-		{
-			ft_putnbr_fd(n / 10);
-		}
-		i = n % 10 + '0';
-		write (fd, &i, 1);
+		new->content = malloc(content_size);
+		if (new->content == NULL)
+			return (NULL);
+		ft_memmove(new->content, content, content_size);
+		new->content_size = content_size;
 	}
+	new->next = NULL;
+	return (new);
 }

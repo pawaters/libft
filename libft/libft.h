@@ -6,7 +6,7 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 16:22:28 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/29 16:31:04 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 17:16:59 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
 	size_t			content_size;

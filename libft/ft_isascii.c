@@ -6,11 +6,11 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 15:15:03 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/02 15:33:58 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 15:29:00 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 32 && c <= 127)
 		return (1);

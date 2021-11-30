@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 15:15:03 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 15:29:13 by pwaters          ###   ########.fr       */
+/*   Created: 2021/11/30 14:31:37 by pwaters           #+#    #+#             */
+/*   Updated: 2021/11/30 15:04:36 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	if ((c >= '0' && c <= '9'))
-		return (1);
-	else
-		return (0);
+	if (new != NULL)
+	{
+		new->next = *alst;
+		*alst = new;
+	}
 }

@@ -6,13 +6,13 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 13:17:00 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/03 13:22:30 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 15:39:04 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_bzero(void *s, size_t n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < n && *(s + i))

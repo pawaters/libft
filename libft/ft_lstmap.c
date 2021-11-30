@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 15:15:03 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 15:29:13 by pwaters          ###   ########.fr       */
+/*   Created: 2021/11/30 15:10:59 by pwaters           #+#    #+#             */
+/*   Updated: 2021/11/30 16:14:35 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include "libft.h"
+
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	if ((c >= '0' && c <= '9'))
-		return (1);
-	else
-		return (0);
+	t_list	*newlist;
+
+	if (lst != NULL && f != NULL)
+	{
+		newlist = f(lst);
+		if (newlist != NULL && lst->next != NULL)
+			newlist->next = ft_lstmap(lst->next, f);
+		return (newlist);
+	}
+	return (NULL);
 }

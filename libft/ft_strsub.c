@@ -6,17 +6,13 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:46:37 by pawaters          #+#    #+#             */
-/*   Updated: 2021/11/08 16:57:59 by pawaters         ###   ########.fr       */
+/*   Updated: 2021/11/30 17:10:07 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Is there an error case missing if len = 0, or if res is empty?
-*/
-
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	int	i;
+	int		i;
 	char	*res;
 
 	i = 0;

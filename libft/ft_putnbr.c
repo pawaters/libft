@@ -6,7 +6,7 @@
 /*   By: pwaters <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 13:20:23 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/02 17:03:35 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 16:29:22 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr(int nb)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (nb == -2147483648)
@@ -34,6 +34,6 @@ void	ft_putnbr(int nb)
 			ft_putnbr(nb / 10);
 		}
 		i = nb % 10 + '0';
-		write (1, &i, 1); 
+		write (1, &i, 1);
 	}
 }

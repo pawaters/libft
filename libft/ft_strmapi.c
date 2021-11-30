@@ -6,7 +6,7 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:58:16 by pawaters          #+#    #+#             */
-/*   Updated: 2021/11/08 17:16:44 by pawaters         ###   ########.fr       */
+/*   Updated: 2021/11/30 16:45:45 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*res;
-	int	len;
-	int	i;
+	int		len;
+	int		i;
 
 	i = 0;
 	len = ft_strlen(s);

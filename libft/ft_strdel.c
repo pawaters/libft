@@ -6,17 +6,13 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 09:47:43 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/03 10:24:34 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 16:40:32 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_strdel(char **as)
 {
-	i+f (as)
-	{	
-		free(*as);
-		*as = NULL;
-	}
+	ft_memdel((void **)as);
 }

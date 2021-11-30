@@ -6,14 +6,14 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:31:36 by pawaters          #+#    #+#             */
-/*   Updated: 2021/11/29 15:31:09 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 16:42:39 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
 	while (*(s + i) != '\0')
 	{	

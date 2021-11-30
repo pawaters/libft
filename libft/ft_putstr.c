@@ -6,12 +6,12 @@
 /*   By: pwaters <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 17:52:04 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/02 10:44:59 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 16:30:36 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
 	while (*str)
-		write( 1, str++, 1);
+		write(1, str++, 1);
 }

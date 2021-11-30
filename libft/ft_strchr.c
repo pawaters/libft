@@ -6,7 +6,7 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 10:39:07 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/03 11:01:11 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 16:36:36 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (*(s + i) == (char)c)
 			return ((char *)s + i);
-	i++;
+		i++;
 	}	
 	if (*(s + i) == (char)c)
 		return ((char *)s + i);
-	return ((void*)0);
+	return ((void *)0);
 }

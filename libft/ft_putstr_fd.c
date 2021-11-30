@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwaters <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/28 17:52:04 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/02 16:40:42 by pwaters          ###   ########.fr       */
+/*   Created: 2021/11/30 16:30:49 by pwaters           #+#    #+#             */
+/*   Updated: 2021/11/30 16:31:06 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putstr_fd(char const *s, int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
 	while (*s)
 		write(fd, s++, 1);

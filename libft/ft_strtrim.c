@@ -6,27 +6,27 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 11:40:07 by pawaters          #+#    #+#             */
-/*   Updated: 2021/11/09 11:56:34 by pawaters         ###   ########.fr       */
+/*   Updated: 2021/11/30 17:12:47 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h
+#include "libft.h"
 
 int	ft_isspace(char c)
 {
 	if (c == ' ' || c == '\n' || c == '\t')
 		return (1);
-	return (0); 
+	return (0);
 }
 
 char	*ft_strtrim(char const *s)
 {
 	char	*res;
-	int	i;
-	int	start;
-	int	end;
-	int 	len;
+	int		i;
+	int		start;
+	int		end;
+	int		len;
 
 	i = 0;
 	start = 0;

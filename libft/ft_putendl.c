@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 15:15:03 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 15:29:13 by pwaters          ###   ########.fr       */
+/*   Created: 2021/11/30 10:47:07 by pwaters           #+#    #+#             */
+/*   Updated: 2021/11/30 16:27:25 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include <unistd.h>
+
+void	ft_putendl(char const *s)
 {
-	if ((c >= '0' && c <= '9'))
-		return (1);
-	else
-		return (0);
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+		write(1, s[i++], 1);
+	write(1, '\n', 1);
 }

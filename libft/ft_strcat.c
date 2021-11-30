@@ -6,7 +6,7 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:13:08 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/03 14:43:43 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/11/30 16:35:31 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strcat(char *s1, const char *s2)
 {
-	int 	i;
-	int 	len;
-	char 	*p1;
+	int		i;
+	int		len;
+	char	*p1;
 
 	i = 0;
 	p1 = s1;
@@ -26,4 +26,3 @@ char	*ft_strcat(char *s1, const char *s2)
 	*(s2 + i) = '\0';
 	return (s1);
 }
-

@@ -6,16 +6,16 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:28:01 by pawaters          #+#    #+#             */
-/*   Updated: 2021/11/08 16:36:09 by pawaters         ###   ########.fr       */
+/*   Updated: 2021/11/30 16:47:45 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strnequ( char const *s1, char const *s2, size_t n)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	if (!s1 || !s2) 
+	if (!s1 || !s2)
 		return (0);
 	while (*(s1 + i) != '\0' && *(s1 + i) == *(s2 + i) && i < n)
 		i++;
