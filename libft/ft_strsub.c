@@ -6,9 +6,11 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:46:37 by pawaters          #+#    #+#             */
-/*   Updated: 2021/11/30 17:10:07 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/01 14:31:40 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {

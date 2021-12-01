@@ -6,12 +6,14 @@
 /*   By: pwaters <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 17:52:04 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:30:36 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/01 12:10:51 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putstr(char *str)
+#include "libft.h"
+
+void	ft_putstr(char const *s)
 {
-	while (*str)
-		write(1, str++, 1);
+	while (*s)
+		write(1, s++, 1);
 }

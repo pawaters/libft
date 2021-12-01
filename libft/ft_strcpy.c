@@ -6,13 +6,13 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 11:09:54 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:37:22 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/01 12:23:26 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	dst = strdup(src);
 }

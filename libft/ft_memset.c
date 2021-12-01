@@ -6,9 +6,11 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:11:16 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:20:36 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/01 12:03:52 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

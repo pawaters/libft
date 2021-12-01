@@ -6,11 +6,11 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 14:15:40 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:13:40 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/01 14:34:45 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {

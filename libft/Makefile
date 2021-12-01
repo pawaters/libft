@@ -6,7 +6,7 @@
 #    By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/30 11:03:23 by pwaters           #+#    #+#              #
-#    Updated: 2021/11/30 11:29:04 by pwaters          ###   ########.fr        #
+#    Updated: 2021/12/01 10:15:16 by pwaters          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,7 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $OBJ
+$(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@echo "$(NAME) created"
 	@ranlib $(NAME)

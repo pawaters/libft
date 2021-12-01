@@ -6,7 +6,7 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 14:19:14 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:15:12 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/01 10:04:25 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ void	*ft_memalloc(size_t size)
 {
 	void	*ptr;
 
-	if (ptr = (void)malloc(size))
-			ft_bzero(ptr, size);
+	ptr = malloc(size);
+	if (ptr == NULL)
+		return (NULL);
+	ft_bzero(ptr, size);
 	return (ptr);
 }
