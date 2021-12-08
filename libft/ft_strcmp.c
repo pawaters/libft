@@ -6,7 +6,7 @@
 /*   By: pwaters <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 13:05:41 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:36:59 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/08 12:35:28 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,5 @@ int	ft_strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
-	if (*s1 - *s2 > 0)
-		return (1);
-	else if (*s2 - *s1 > 0)
-		return (-1);
-	else
-		return (0);
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }

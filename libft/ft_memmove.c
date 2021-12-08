@@ -6,7 +6,7 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 13:33:27 by pwaters           #+#    #+#             */
-/*   Updated: 2021/12/06 14:31:41 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/08 12:11:20 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*tmp;
 
-	tmp = (char *)malloc(sizeof(char) * len);
-	if (tmp == NULL)
+	if (!dst && !src)
 		return (NULL);
-	ft_memcpy(tmp, src, len);
-	ft_memcpy(dst, tmp, len);
-	free(tmp);
+	if (dst > src && dst < src + len)
+		while (len--)
+			((char *)dst)[len] = ((char *)src)[len];
+	else
+		return (ft_memcpy(dst, src, len));		
 	return (dst);
 }

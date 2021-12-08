@@ -6,7 +6,7 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 09:00:59 by pawaters          #+#    #+#             */
-/*   Updated: 2021/12/01 14:14:22 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/08 11:32:19 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	size_t	j;
 
 	i = 0;
+	if (*s2 == '\0')
+		return (s1);
 	while (i < n && s1[i] != '\0')
 	{
 		j = 0;
