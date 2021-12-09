@@ -6,7 +6,7 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:28:01 by pawaters          #+#    #+#             */
-/*   Updated: 2021/12/01 12:38:10 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/09 14:10:26 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strnequ( char const *s1, char const *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (!s1 || !s2)

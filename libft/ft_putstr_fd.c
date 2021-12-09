@@ -6,9 +6,11 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 16:30:49 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:31:06 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/09 12:03:11 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putstr_fd(char const *s, int fd)
 {

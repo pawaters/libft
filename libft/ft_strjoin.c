@@ -6,7 +6,7 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:44:33 by pawaters          #+#    #+#             */
-/*   Updated: 2021/11/30 16:43:34 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/09 11:55:46 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	*dest;
 
 	i = 0;

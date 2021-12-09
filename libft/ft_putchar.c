@@ -6,11 +6,11 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 10:41:40 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 16:24:54 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/09 11:24:34 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar(char c)
 {

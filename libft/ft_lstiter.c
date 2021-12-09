@@ -6,7 +6,7 @@
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 15:04:58 by pwaters           #+#    #+#             */
-/*   Updated: 2021/11/30 15:10:40 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/09 11:49:01 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,10 @@ void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	if (f != NULL)
 	{
-		f(lst);
-		lst = lst->next;
+		while (lst != NULL)
+		{
+			f(lst);
+			lst = lst->next;
+		}
 	}
 }

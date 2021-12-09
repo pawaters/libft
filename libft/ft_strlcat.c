@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pwaters <pwaters@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 15:44:59 by pwaters           #+#    #+#             */
-/*   Updated: 2021/12/01 12:23:57 by pwaters          ###   ########.fr       */
+/*   Created: 2021/12/09 11:56:38 by pwaters           #+#    #+#             */
+/*   Updated: 2021/12/09 14:08:59 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	int	srclen;
-	int	dstlen;
-	int	i;
+	size_t	srclen;
+	size_t	dstlen;
+	size_t	i;
 
 	srclen = ft_strlen(src);
 	dstlen = ft_strlen(dst);

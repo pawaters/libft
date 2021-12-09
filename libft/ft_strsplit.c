@@ -6,11 +6,10 @@
 /*   By: pawaters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 16:43:59 by pawaters          #+#    #+#             */
-/*   Updated: 2021/11/30 17:03:56 by pwaters          ###   ########.fr       */
+/*   Updated: 2021/12/09 10:59:14 by pwaters          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 int	ft_wc(char const *s, char c)
@@ -20,75 +19,55 @@ int	ft_wc(char const *s, char c)
 
 	i = 0;
 	wc = 0;
-	if (!*s || !s)
-		return (0);
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		while (s[i] == c)
 			i++;
-		while (s[i] != c)
+		if (s[i] != '\0')
+			wc++;
+		while (s[i] && (s[i] != c))
 			i++;
-		wc++;
-		i++;
 	}
 	return (wc);
 }
 
-int	ft_strclen(char const *s, char c)
+char	*ft_strndup(const char *s, size_t n)
 {
-	int	i;
-	int	len;
+	char	*str;
 
-	i = 0;
-	len = 0;
-	if (!*s || !s)
-		return (0);
-	while (s[i] == c)
-		i++;
-	while (s[i] != c)
-		len++;
-	return (len);
-}
-
-char	*ft_strcdup(char const *s, char c)
-{
-	int		i;
-	char	*res;
-
-	i = 0;
-	res = (char *)malloc(ft_strclen(s, c) + 1);
-	if (!*s || !s)
-		return (0);
-	while (s[i] == c)
-		i++;
-	while (s[i] != c)
-	{
-		res[i] = s[i];
-		i++;
-	}
-	return (res);
+	str = (char *)malloc(sizeof(char) * n + 1);
+	if (str == NULL)
+		return (NULL);
+	str = ft_strncpy(str, s, n);
+	str[n] = '\0';
+	return (str);
 }
 
 char	**ft_strsplit(char const *s, char c)
 {
-	char	**res;
-	int		wnb;
-	int		wc;
 	int		i;
+	int		j;
+	int		k;
+	char	**tab;
 
 	i = 0;
-	wnb = ft_wc(s, c);
-	res = (char **)malloc(sizeof(char *) * (wc + 1));
-	if (!*s || !s || !res)
-		return (0);
-	while (wc < wnb)
+	k = 0;
+	tab = (char **)malloc(sizeof(char *) * (ft_wc(s, c)) + 1);
+	if (tab == NULL)
+		return (NULL);
+	while (s[i])
 	{
-		while (*(s + i) == c)
+		while (s[i] == c)
 			i++;
-		res[wc] = ft_strcdup(s + i, c);
-		wc++;
-		while (*(s + i) != c)
+		j = i;
+		while (s[i] && s[i] != c)
 			i++;
+		if (i > j)
+		{
+			tab[k] = ft_strndup(s + j, i - j);
+			k++;
+		}
 	}
-	return (res);
+	tab[k] = NULL;
+	return (tab);
 }
