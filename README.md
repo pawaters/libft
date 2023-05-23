@@ -12,14 +12,21 @@ Libft is an individual project at Hive Helsinki that requieres us to re-create s
 
 ### What's in it?
 
-There are 4 sections:
+60 functions. 
+In this library, we added all the basic helper functions we will use in a C program to build more complex algos.
+Here are the 4 main types of functions in this library:
+- string manipulation 
+- identificators/validators (is it a character? a number?)
+- memory manipulation 
+- linked-lists manipulation.
+
+### List of functions
+There are 4 sections imposed by the subject:
 
 1.  **Libc Functions:** Some of the standard C functions
 2.  **Additional functions:** Functions that will be useful for later projects
 3.  **Bonus Functions:** Functions that will be useful for linked list manipulation
 4.  **Personal Functions:** Functions I believe will be useful later.
-
-### List of functions
 Libc functions | Additional functions | Bonus Functions | Personal Functions
 :----------- | :-----------: | :-----------: | -----------:
 [ft_memset](#ft_memset)		|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) 
