@@ -28,35 +28,35 @@ There are 4 sections imposed by the subject:
 3.  **Bonus Functions:** Functions that will be useful for linked list manipulation
 4.  **Personal Functions:** Functions I believe will be useful later.
 Libc functions | Additional functions | Bonus Functions | Personal Functions
-:----------- | :-----------: | :-----------: | -----------:
-[ft_memset](#ft_memset)		|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) 
-[ft_bzero](#ft_bzero)		|[ft_strjoin](#ft_strjoin)  | [ft_lstadd](#ft_lstadd_front)| [ft_isupper](#ft_isupper) 
-[ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)  | [ft_lstmap](#ft_lstmap)        | [ft_isspace](#ft_isspace)   
-[ft_memccpy](#ft_memccpy)	|[ft_split](#ft_split)      | [ft_lstiter](#ft_lstiter)           | 
-[ft_memmove](#ft_memmove)	|[ft_itoa](#ft_itoa)       | [ft_lstdelone](#ft_lstdelone)  | 
-[ft_memchr](#ft_memchr)		|[ft_strmapi](#ft_strmapi)  |      | 
-[ft_memcmp](#ft_memcmp)		|[ft_putchar_fd](#ft_putchar_fd)|    | 
-[ft_strlen](#ft_strlen)		|[ft_putstr_fd](#ft_putstr_fd)	|      | 
-[ft_strdup](#ft_strdup)		|[ft_putendl_fd](#ft_putendl_fd)|       | 
-[ft_strcpy](#ft_strcpy)		|[ft_putnbr_fd](#ft_putnbr_fd)	|				| 
-[ft_strlcpy](#ft_strlcpy)	| 	|			| 
-[ft_strcat](#ft_strcat)		| 	| | 
-[ft_strlcat](#ft_strlcat)	| 	| | 
-[ft_strchr](#ft_strchr)		| 	| | 
-[ft_strrchr](#ft_strrchr)	| 	| | 
-[ft_strstr](#ft_strstr)		|   | | 
-[ft_strnstr](#ft_strnstr)	| 	| | 
-[ft_strcmp](#ft_strcmp)		| 	| | 
-[ft_strncmp](#ft_strncmp)	| 	| | 
-[ft_atoi](#ft_atoi)         | 	| | 
-[ft_isalpha](#ft_isalpha)	| 	| | 
-[ft_isdigit](#ft_isdigit)	| 	| |
-[ft_isalnum](#ft_isalnum)	|   | | 
-[ft_isascii](#ft_isascii)	|   | | 
-[ft_isprint](#ft_isprint)	|   | | 
-[ft_toupper](#ft_toupper)   |   | | 
-[ft_tolower](#ft_tolower)	|   | | 
-[ft_calloc](#ft_calloc)     |   | |
+|:----------- | :-----------: | :-----------: | -----------:|
+|[ft_memset](#ft_memset)		|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) |
+|[ft_bzero](#ft_bzero)		|[ft_strjoin](#ft_strjoin)  | [ft_lstadd](#ft_lstadd_front)| [ft_isupper](#ft_isupper) |
+|[ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)  | [ft_lstmap](#ft_lstmap)        | [ft_isspace](#ft_isspace)   |
+|[ft_memccpy](#ft_memccpy)	|[ft_split](#ft_split)      | [ft_lstiter](#ft_lstiter)           |   |
+|[ft_memmove](#ft_memmove)	|[ft_itoa](#ft_itoa)       | [ft_lstdelone](#ft_lstdelone)  |   |
+|[ft_memchr](#ft_memchr)		|[ft_strmapi](#ft_strmapi)  |      |    |
+|[ft_memcmp](#ft_memcmp)		|[ft_putchar_fd](#ft_putchar_fd)|    |   |
+|[ft_strlen](#ft_strlen)		|[ft_putstr_fd](#ft_putstr_fd)	|      |   |
+|[ft_strdup](#ft_strdup)		|[ft_putendl_fd](#ft_putendl_fd)|       |   |
+|[ft_strcpy](#ft_strcpy)		|[ft_putnbr_fd](#ft_putnbr_fd)	|				|   |
+|[ft_strlcpy](#ft_strlcpy)	| 	|			|   |
+|[ft_strcat](#ft_strcat)		| 	| |   |
+|[ft_strlcat](#ft_strlcat)	| 	| |   |
+|[ft_strchr](#ft_strchr)		| 	| |   |
+|[ft_strrchr](#ft_strrchr)	| 	| |   |
+|[ft_strstr](#ft_strstr)		|   | |   |
+|[ft_strnstr](#ft_strnstr)	| 	| |   |
+|[ft_strcmp](#ft_strcmp)		| 	| |     |
+|[ft_strncmp](#ft_strncmp)	| 	| |    |
+|[ft_atoi](#ft_atoi)         | 	|  |   |
+|[ft_isalpha](#ft_isalpha)	| 	|  |   |
+|[ft_isdigit](#ft_isdigit)	| 	|  |  |
+|[ft_isalnum](#ft_isalnum)	|   |  |   |
+|[ft_isascii](#ft_isascii)	|   | |   |
+|[ft_isprint](#ft_isprint)	|   | |   |
+|[ft_toupper](#ft_toupper)   |   | |  |
+|[ft_tolower](#ft_tolower)	|   | |   |
+|[ft_calloc](#ft_calloc)     |   | | |
 
 ## [ft_memset](libft/ft_memset.c)
 
