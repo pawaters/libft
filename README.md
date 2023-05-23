@@ -4,7 +4,7 @@ My own implementation of the standard C library, from scratch, for my use.
 ### Table of Contents:
 * [What is libft?](#what-is-libft)
 * [What's in it?](#whats-in-it)
-* [List of functions](#list-of-functions)  Click to each function to see an explication
+* [List of functions](#list-of-functions) 
 
 ### What is libft?
 
